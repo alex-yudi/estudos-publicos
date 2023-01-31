@@ -1,8 +1,14 @@
-const verifyPassword = (req, res, next) => {
-    // SENHA CORRETA:
-    const password = 'acessoLiberado';
+const database = require('../database/database')
 
-    const { senha } = req.query
+const verifyPassword = async (req, res, next) => {
+    // SENHA CORRETA:
+    const queryPassword = await database.query('SELECT senha FROM acesso;');
+    const password = queryPassword[0].senha;
+
+    const { senha } = req.query;
+
+    console.log(password, "senha do bd");
+    console.log(senha, "senha query")
 
     if (!senha) {
         return res.status(400).json({ mensagem: "Necessário fornecer a senha de acesso!" });
