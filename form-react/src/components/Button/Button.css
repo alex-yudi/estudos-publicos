@@ -1,0 +1,31 @@
+button {
+    all: unset;
+    margin: 5px;
+    width: 476px;
+    height: 51px;
+
+    cursor: pointer;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.blue {
+    background-color: #2A4D77;
+}
+
+.red {
+    background-color: rgba(251, 6, 21, 0.65);
+    ;
+}

@@ -1,0 +1,23 @@
+.container-registration-complete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.container-registration-complete img {
+    height: 479px;
+    width: 446px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #0B2F49;
+}
