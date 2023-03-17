@@ -8,12 +8,14 @@ const dbData = {
     database: process.env.BD_DATABASE
 }
 
-if (process.env.NODE_ENV === 'TEST') {
+if (process.env.NODE_ENV === 'test') {
     dbData.host = process.env.BD_TEST_HOST;
     dbData.user = process.env.BD_TEST_USER;
     dbData.password = process.env.BD_TEST_PASS;
     dbData.database = process.env.BD_TEST_DATABASE;
 }
+
+
 
 const knex = require('knex')({
     client: 'pg',
