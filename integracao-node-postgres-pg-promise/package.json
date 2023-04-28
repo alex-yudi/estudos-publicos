@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "dev": "nodemon ./src/index.js",
-    "test": "jest"
+    "test": "NODE_ENV=tes& jest --runInBand"
   },
   "keywords": [],
   "author": "",

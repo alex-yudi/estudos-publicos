@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import transporter from '../emailSender'
+import transporter from '../services/emailSender'
 
 const user = {
     email: 'yudi.toma@gmail.com',
